@@ -1,0 +1,145 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f17;
+  color: #f5f5fa;
+  line-height: 1.7;
+}
+
+a {
+  color: #a874ff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background: linear-gradient(135deg, #2e005f, #7a00cc);
+  text-align: center;
+  padding: 3rem 1rem;
+  color: white;
+  box-shadow: 0 0 20px #7a00cc60;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #a874ff;
+  border-bottom: 2px solid #a874ff;
+  display: inline-block;
+}
+
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services li {
+  background-color: #1d1d2b;
+  margin: 0.5rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #a874ff;
+  border-radius: 6px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: #a874ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #8d5ed6;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1a1a2a;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-top: -2rem;
+}
+
+.profile-pic img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #a874ff;
+  box-shadow: 0 0 15px #a874ff80;
+  background-color: white;
+}
+
+.appointment-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #1a1a2b;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #a874ff50;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  color: #a874ff;
+}
+
+.appointment-form input,
+.appointment-form select {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background-color: #0f0f17;
+  color: #f5f5f5;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+  outline: none;
+  border-color: #a874ff;
+  box-shadow: 0 0 4px #a874ff80;
+}
+
+.thankyou-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  line-height: 2;
+  color: #e0e0f0;
+}
