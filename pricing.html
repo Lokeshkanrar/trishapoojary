@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing - Trisha Poojary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Service Pricing</h1>
+      <p>Choose your relaxation, and we’ll handle the rest 💆‍♀️</p>
+    </div>
+  </header>
+
+  <section class="pricing container">
+    <div class="service">
+      <h3>Relaxation Massage</h3>
+      <p>₹1200</p>
+      <button onclick="addToCart(1200)">Add to Cart</button>
+    </div>
+
+    <div class="service">
+      <h3>Deep Tissue Therapy</h3>
+      <p>₹1500</p>
+      <button onclick="addToCart(1500)">Add to Cart</button>
+    </div>
+
+    <div class="service">
+      <h3>Foot Reflexology</h3>
+      <p>₹1000</p>
+      <button onclick="addToCart(1000)">Add to Cart</button>
+    </div>
+
+    <div class="service">
+      <h3>Back & Shoulder Pain Relief</h3>
+      <p>₹1300</p>
+      <button onclick="addToCart(1300)">Add to Cart</button>
+    </div>
+
+    <div class="service">
+      <h3>Home Visit (Extra)</h3>
+      <p>₹500</p>
+      <button onclick="addToCart(500)">Add to Cart</button>
+    </div>
+
+    <div class="cart-summary">
+      <h2>🛒 Cart Total: ₹<span id="cartTotal">0</span></h2>
+      <button class="cta-btn" onclick="alert('Proceeding to booking...')">Book Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Trisha Poojary. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let total = 0;
+    function addToCart(price) {
+      total += price;
+      document.getElementById("cartTotal").innerText = total;
+    }
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
